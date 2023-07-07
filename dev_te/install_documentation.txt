@@ -1,0 +1,10 @@
+1.Prerequest.
+	python >=3.7
+	python
+
+Step1.
+install the python in your computer.
+Step2.
+You have to install flask,opencv-python.
+Step3.
+connect the ipcam.

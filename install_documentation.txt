@@ -1,0 +1,29 @@
+Install guide for capture image
+
+1.	Prerequest 
+
+Language: python >= 3.7
+Required module : flask,opencv-python,
+
+2.	Installation process
+1)	You have to install python and required modules.
+2)	The definition of CameraThread python class should be the main section in production server.
+3)	The code of creating camera thread object should be after the definition of CameraThread python class.
+4)	The camera_urls variable is array variable that includes the all urls of cameras you want to see.
+5)	The api of snapshot request might be the any part of your production server api.
+
+3.	Usage
+1)	There should be three parameter in the request.
+The filename isn’t the name of image but the path of recording the image.
+The name of image is generated automatically.
+The urlparameter should be the url of IPcam you want to capture.
+The timestamp should be the date.
+2)	The response have five parameters that includes timerequest,timestamp,filename,responsestate,responsecode.
+Timerequest  is a time of request .
+Timestamp is a time of ending the capture.
+The filename is a name of image you capture.
+The responsestate is a state of the result whether saved or not.
+The responsecode. Is a state of the processing the request.
+3)	To request with three parameter included filename, timestamp, urlparameter, you will capture the image of camera you choose.
+The image will be recorded in the filename path you point.
+ 
